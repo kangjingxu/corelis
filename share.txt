@@ -1,0 +1,9 @@
+git clone https://github.com/RobertCNelson/armv7-multiplatform.git
+cd armv7-multiplatform
+git checkout origin/v4.19.x -b tmp
+./build_kernel.sh
+
+git clone https://github.com/RobertCNelson/ti-linux-kernel-dev.git
+cd ti-linux-kernel-dev
+git checkout origin/ti-linux-4.14.y -b tmp
+./build_kernel.sh
